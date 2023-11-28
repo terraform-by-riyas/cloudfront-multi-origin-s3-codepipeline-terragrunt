@@ -1,14 +1,13 @@
 ---
-client_name: demo-client
+client_name: demo
 project_name: frontend
-environment: dev # This is not required. The environment will get from the folder name. <region>/<{dev,prod}>
 aws_profile_name: default # Credential profile
 state_bucket: tf-tg-state-lock
 dynamodb_table: state-lock
 state_bucket_region: us-east-1
-aws_codestarconnections_connection_arn: arn:aws:codestar-connections:us-east-1:123456789102:connection/b4f396c1-242-3443-a4b3-4242424
-FullRepositoryId: something/something
-pipeline_name: angular-pipeline
+aws_codestarconnections_connection_arn: arn:aws:codestar-connections:us-east-1:620651758673:connection/2bea9b31-cb7c-423c-9917-099cccaffb45
+FullRepositoryId: riyasrauther/angular16
+pipeline_name: angular-pipeline-fe-prod
 artifact_bucket_primary: artifact-bucket-primary
 artifact_bucket_failover: artifact-bucket-failover
 BranchName: master

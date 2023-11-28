@@ -1,4 +1,5 @@
 resource "aws_s3_bucket_policy" "primary" {
+  provider = aws.us-east-1
   bucket = var.primary_bucket_name
   policy = data.aws_iam_policy_document.allow_access_from_cloudfront.json
 }

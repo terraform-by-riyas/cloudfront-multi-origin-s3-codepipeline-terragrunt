@@ -25,7 +25,7 @@ dependency "s3" {
 ###########################################################
 
 inputs = {
-environment = local.common_vars.environment
+environment = "${local.environment_vars.locals.environment}"
 project = local.common_vars.project_name
 codepipeline_name = "${local.common_vars.client_name}-${local.environment_vars.locals.environment}-${local.common_vars.project_name}-${local.common_vars.pipeline_name}" # acpd-prod-frontend-pipeline
 aws_codestarconnections_connection_arn = "${local.common_vars.aws_codestarconnections_connection_arn}"
